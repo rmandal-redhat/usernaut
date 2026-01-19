@@ -4,16 +4,15 @@ metadata:
   labels:
     app.kubernetes.io/name: usernaut
     app.kubernetes.io/managed-by: kustomize
-  name: dataverse-aggregate-mygroup
+  name: dataverse-consumer-bookingmaster-test
   namespace: usernaut
 spec:
-  group_name: dataverse-aggregate-mygroup
+  group_name: dataverse-consumer-bookingmaster-test
   members:
    users:
-    - subhatta
-    - vinod
-    - rmandal
     - ruagrawa
+    - rmandal
+    - atikande
   backends:
   - name: fivetran
     type: fivetran
