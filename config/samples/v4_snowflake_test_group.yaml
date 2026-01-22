@@ -1,0 +1,21 @@
+apiVersion: operator.dataverse.redhat.com/v1alpha1
+kind: Group
+metadata:
+  labels:
+    app.kubernetes.io/name: usernaut
+    app.kubernetes.io/managed-by: kustomize
+  name: dataverse-consumer-usernaut-test
+  namespace: usernaut
+spec:
+  group_name: dataverse-consumer-usernaut-test
+  members:
+   users:
+    - ruagrawa
+    - rmandal
+    - subhatta
+  backends:
+  - name: fivetran
+    type: fivetran
+  - name: rhplatformtest
+    type: "snowflake"
+  

@@ -16,4 +16,5 @@ spec:
   backends:
   - name: fivetran
     type: fivetran
-  
+  - name: rhplatformtest
+    type: "snowflake"
