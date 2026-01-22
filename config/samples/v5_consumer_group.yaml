@@ -4,18 +4,14 @@ metadata:
   labels:
     app.kubernetes.io/name: usernaut
     app.kubernetes.io/managed-by: kustomize
-  name: dataverse-consumer-usernaut-test
+  name: dataverse-aggregate-usernaut
   namespace: usernaut
 spec:
-  group_name: dataverse-consumer-usernaut-test
+  group_name: dataverse-aggregate-usernaut
   members:
    users:
     - ruagrawa
     - rmandal
-    - subhatta
   backends:
   - name: fivetran
     type: fivetran
-  - name: rhplatformtest
-    type: "snowflake"
-  
